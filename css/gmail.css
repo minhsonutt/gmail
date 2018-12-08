@@ -1,0 +1,309 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* Fonts */
+
+@font-face {
+	src: url(../fonts/Roboto-Thin.ttf);
+	font-family: roboto-t;
+}
+@font-face {
+	src: url(../fonts/Roboto-Light.ttf);
+	font-family: roboto-l;
+}
+@font-face {
+	src: url(../fonts/Roboto-Regular.ttf);
+	font-family: roboto-r;
+}
+
+/* Nav CSS */
+.menu{
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 1;
+   
+}
+div.menu > .left > .logo > img{
+    float: left;
+    padding-left: 12px;
+}
+div.menu > .right > .item > ul > li{
+    float: right;
+    list-style: none;
+}
+div.menu > .right > .item > ul > li a{
+    color: #4a4a4a;
+    display: block;
+    text-decoration: none;
+    padding: 24px 32px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    line-height: 16px;
+    font-family: "Roboto","Helvetica",arial,sans-serif;
+}
+div.menu > .right > .item > ul > li.active a{
+    color: #dd5347;
+}
+div.menu > .right > .item > ul > li.bg{
+    background-color: #dd5347;
+    padding: 0 15px;
+}
+div.menu > .right > .item > ul > li.bg a{
+    color: white;
+}
+div.menu > .right > .item > ul > li.signin:hover a{
+    color: #dd5347;
+}
+div.clear{
+    clear: both;
+}
+/* Banner CSS */
+div.banner img{
+    width: 100%;
+    margin-top: 64px;
+}
+
+/* Content CSS */
+div.getstart{
+    height: 186px;
+    background-color: #dd5347;
+    position: relative;
+    bottom: 4px;
+}
+div.getstart ._left{
+    height: 186px;
+    width: 390px;
+    position: relative;
+    float: left;
+}
+div.getstart ._left ._get{
+    width: 241px;
+    height: 76px;
+    border: 1px solid white;
+    position: absolute;
+    top: 52px;
+    left: 80px;
+    position: relative;
+}
+div.getstart ._left ._get h2{
+    margin-top: 30px;
+    margin-left: 68px;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: roboto-r;
+}
+div.getstart ._left ._get:hover{
+    cursor: pointer;
+}
+div.getstart ._right{
+    height: 186px;
+    width: 818px;
+    float: left;
+}
+div.getstart ._right ._txt{
+    height: 186px;
+    width: 723px;
+}
+div.getstart ._right ._txt h1{
+    margin-top: 31px;
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: roboto-l;
+}
+div._txt_center{
+    width: 100%;
+    height: 186px;
+    /* margin-bottom: 29px; */
+}
+div._txt_center .top {
+    margin-top: 72px;
+}
+div._txt_center .top h1{
+    text-align: center;
+    font-size: 40px;
+    /* line-height: 19px; */
+    font-family: roboto-t;
+    color: #333333;
+}
+div._txt_center .bot {
+    width: 460px;
+    height: 44px;
+    margin: auto;
+    padding-top: 13px;
+}
+div._txt_center .bot p{
+    font-size: 16px;
+    font-family: roboto-l;
+    line-height: 21px;
+}
+div._txt_center .bot span{
+    color: rgb(8, 78, 189);
+}
+
+/* Card CSS */
+
+.card{
+    text-align: center;
+    margin-top:-20px;
+    margin-bottom: 200px;
+    height: 258px;
+}
+div.card .element{
+    display: inline-block;
+    max-width: 258px;
+    height: 390px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    margin: 10px;
+}
+div.card .element .detail{
+    max-width: 258px;
+    height: 390px;
+}
+div.card .element .detail h3{
+    font-size: 20px;
+    padding: 26px 24px 0;
+    font-family: roboto-t;
+    color: #333;
+}
+div.card .element .detail p{
+    color: #333;
+    font-size: 16px;
+    font-family: roboto-l;
+    line-height: 24px;
+    padding: 25px;
+    text-align: initial;
+}
+div.card .element .detail span{
+    color: #4A90E2;
+}
+._icn{
+    width: 100%;
+    height: 218px;
+    background-color: #F9F9F9;
+}
+._icn img{
+    width: 100%;
+    margin-top: 80px;
+}
+._icn .icon,
+._icn .link{
+  font-size: 20px;
+  max-width: 900px;
+  padding: 25px 120px;
+ border-radius: 0%;
+}
+._icn .icon a{
+    color: #717171;
+    padding-right: 6px;
+}
+._icn .link {
+    margin-top: -125px;
+}
+._icn .link a{
+ text-decoration: none;
+ font-size: 15px;
+ padding-right: 3px;
+ font-family: "Roboto","Helvetica",arial,sans-serif;
+ color: #0000EE;
+}
+._icn .link a._active{
+    color: #9A1A8B;
+}
+._icn .link a img{
+    width: 36px;
+    height: 22px;
+    border: 1px solid #C0C0C0;
+    margin-left: 110px;
+}
+.footer-bot{
+    width: 100%;
+    height: 50px;
+    background-color: #F5F5F5;
+}
+.footer-bot .left {
+    margin-left: 120px;
+    float: left;
+    margin-top: 10px;
+}
+.footer-bot .left a{
+    text-decoration: none;
+    font-size: 11px;
+    padding-right: 6px;
+    color:  #0000EE;
+    font-family: "Roboto","Helvetica",arial,sans-serif;
+}
+.footer-bot .language{
+   float: right;
+   margin-top: 15px;
+   border: 1px solid  rgb(169, 169, 169);
+   margin-right: 100px;
+}
+.footer-bot img{
+    position: relative;
+    left: 600px;
+    top: 13px;
+}
+._btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 14px 59px -7px rgba(0,0,0,0.85);
+    background-color: #dd5347;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    animation: _fade 0.9s forwards;
+    opacity: 0;
+}
+._btn img {
+    position: relative;
+    left: 7px;
+    top: 12px;
+}
+/* Animation */
+
+@-webkit-keyframes _fade{
+    0%{transform: translateY(200px);}
+    100%{
+        transform: translateY(0px) ; opacity: 1;
+    }
+}
+
+/* Animation Up/Down */
+._btn .down{
+    animation: up 0.5s forwards;
+}
+@-webkit-keyframes up{
+    0%{transform: rotate(0deg);}
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+._btn .up{
+    animation: _down 0.5s forwards;
+}
+@-webkit-keyframes _down{
+    0%{transform: rotate(180deg);}
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* 
+Scroll...
+
+*/
